@@ -7,3 +7,38 @@ a {
     text-decoration: none;
     color: #000000;
 }
+
+.opCont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 150px;
+    height: 100%;
+}
+
+.opCont > * {
+    text-align: left;
+    width: 100px;
+}
+
+.contentCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: fit-content;
+    height: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.line1, .line2 {
+    height: 100%;
+    width: 3px;
+    background: #000000;
+    background-image: linear-gradient(#FFFFFF 0%, #000000 20% 80%, #FFFFFF 100%)
+}
+
