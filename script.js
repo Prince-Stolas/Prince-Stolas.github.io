@@ -1,4 +1,4 @@
-let alphabet = "abcdefghijklmnopqrstuvwxyz\u2028".split("");
+let alphabet = "abcdefghijklmnopqrstuvwxyz1".split("");
 //let alphabetCaps = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
 let countInterval = ""
 let originalTxt = ""
