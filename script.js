@@ -16,13 +16,13 @@ let count = (id) => {
     }
     txt = txt.substring(0, len-1) + alphabet[alphabet.indexOf(txt[len-1])+1] + txt.substring(len)
     txt = txt.replace("1", "z\u2028")
-    elem.innerHTML = txt
+    elem.innerHTML = txt[0].toUpperCase() + txt.substring(1)
 }
 
 let startCount = (id) => {
     originalTxt = document.getElementById(id).innerHTML
     txtCaps = new Array(originalTxt.length)
-    countInterval = setInterval(()=>{count(id)}, 300)
+    countInterval = setInterval(()=>{count(id)}, 1)
 }
 
 let stopCount = (id) => {
