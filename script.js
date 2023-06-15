@@ -1,4 +1,4 @@
-let alphabet = "abcdefghijklmnopqrstuvwxyz".split("");
+let alphabet = "abcdefghijklmnopqrstuvwxyz\u2028".split("");
 //let alphabetCaps = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
 let countInterval = ""
 let originalTxt = ""
@@ -21,7 +21,6 @@ let count = (id) => {
 
 let startCount = (id) => {
     originalTxt = document.getElementById(id).innerHTML
-    txtCaps = new Array(originalTxt.length)
     countInterval = setInterval(()=>{count(id)}, 1)
 }
 
